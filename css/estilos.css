@@ -1,10 +1,10 @@
 
 :root{
-    --color-principal: #FF5A5F;
+    --color-principal: #d63007;
     --color-primary-hover:#d64246;
-    --color-verde:#04A75B;
-    --color-negro: #444A47;
-    --color-fondo: #F7F9FD;
+    --color-verde:#fe4800;
+    --color-negro: #ffffff;
+    --color-fondo: #000000;
     --color-footer: #151515;
 }
 
@@ -19,6 +19,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: #000000;
 }
 
 .hm-wrapper{
@@ -27,6 +28,10 @@ body{
 
 .hm-wrapper, body{
     min-height: 100%;
+}
+
+.hm-logo h3{
+    color: #E3E3E3;
 }
 
 a{
@@ -43,6 +48,7 @@ img{
     object-fit: cover;
     vertical-align: middle;
     border-style: none;
+    opacity: 50%;
 }
 
 .bg-fondo{
@@ -85,7 +91,7 @@ img{
 
 .btn-primary{
     background: var(--color-principal);
-    color: #fff;
+    color: #030202;
     border-radius: 25px;
     text-align: center;
 }
@@ -108,7 +114,7 @@ img{
 .hm-header{
     position: relative;
     height: 64px;
-    background: #fff;
+    background: #000000;
     line-height: 64px;
     -webkit-transition: all .6s ease-in-out;
     -moz-transition: all .6s ease-in-out;
@@ -148,6 +154,7 @@ img{
 .hm-menu{
     display: flex;
     position: relative;
+    background-color: #030202;
 }
 
 .hm-menu ul{
@@ -155,7 +162,7 @@ img{
 }
 
 .hm-menu ul li a{
-    color: var(--color-negro);
+    color: white;
     font-size: 15px;
     margin-right: 30px;
     display: inline-block;
@@ -186,7 +193,7 @@ img{
     font-size: 10px;
     border-radius: 50%;
     background: var(--color-principal);
-    color: #fff;
+    color: #000000;
     
 }
 
@@ -315,8 +322,8 @@ img{
 
 .hm-tabs .hm-tab-link{
     margin: 0px 20px;
-    background: #fff;
-    border:1px solid #EEF5F9;
+    background: #211d1d;
+    border:1px solid #101415;
     padding: 10px 30px;
     border-radius: 22px;
     color: #7C807E;
@@ -327,7 +334,7 @@ img{
 .hm-tabs .hm-tab-link.active,
 .hm-tabs .hm-tab-link:hover{
     background: var(--color-principal);
-    color: #fff;
+    color: #0b0909;
 }
 
 .hm-tabs .hm-tab-link.active .tabs-content{
@@ -345,7 +352,7 @@ img{
 
 .grid-product .product-item{
     overflow: hidden;
-    background: #fff;
+    background: #120f0f;
     border:1px solid #EEF5F9;
     border-radius: 5px;
     
@@ -518,6 +525,13 @@ footer .foo-row .foo-col ul li a:hover{
 .foo-copy{
     background: #000000;
     padding: 40px 0px;
+    
+}
+
+.foo-copy img{
+height: 80px;
+width: 80px;
+align-items: center;
 }
 
 .foo-copy p{
@@ -525,6 +539,7 @@ footer .foo-row .foo-col ul li a:hover{
     color: #E3E3E3;
     font-size: 14px;
     font-weight: 300;
+    
 }
 
 
@@ -664,3 +679,4 @@ footer .foo-row .foo-col ul li a:hover{
 
     
 }
+

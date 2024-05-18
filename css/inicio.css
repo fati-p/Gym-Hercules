@@ -1,0 +1,54 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+header{
+    display: flex;
+    
+}
+
+
+
+header .tu{
+     align-items: left;
+     padding-left: 20rem;
+     margin-top: -2rem;
+     opacity: 30%;
+}
+ .log{
+    width: 80px;
+    padding-top: 2rem;
+ }
+
+ h2{
+    position: absolute;
+    color: #f9f9f9;
+    padding: 3rem;
+    animation: CENTER;
+    margin-left: 20rem;
+ }
+
+
+.menu a{
+    color: #E03205;
+    text-decoration: none;
+    display: grid;
+    padding-top: 4rem;
+    padding-left: 2rem;
+
+}
+
+ a:hover{
+    color: white;
+}
+
+
+.te{
+    margin-left: 20rem;
+    margin-top: 8rem;
+}
+
+.ses{
+    text-align: left;
+}
