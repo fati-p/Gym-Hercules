@@ -59,13 +59,13 @@ input{
 
 button{
     width: 60%;
-    height:40px;
+    height:20px;
     margin: 10px auto;
     justify-content: center;
     display: block;
     color: whitesmoke;
     background: #ca3301;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
     margin-top: 20px;
     outline: none;
@@ -84,8 +84,8 @@ button:hover{
     border-radius: 60% / 10%;
     transform: translateY(-180px);
     transition: .8s ease-in-out;
-    margin-top: 8rem;
-    background-image: url(../img/pexels-cottonbro-4761779.jpg);
+    margin-top: 9rem;
+    background-image: url(../img/Çift\ Kombini\ Modelleri\ ve\ Fiyatları.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
