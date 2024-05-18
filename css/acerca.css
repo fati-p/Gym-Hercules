@@ -15,6 +15,7 @@ body{
     display: grid;
     padding-top: 4rem;
     padding-left: 2rem;
+    
 
 }
 
@@ -22,3 +23,17 @@ body{
     color: white;
 }
 
+.le{
+    align-items: left;
+    padding-left: 20rem;
+    padding-top: 1rem;
+   
+}
+
+.tu img{
+   
+    margin-left: 40rem;
+    margin-top: -40rem;
+    padding-top: -36rem;
+   
+}
