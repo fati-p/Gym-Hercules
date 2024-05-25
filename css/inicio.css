@@ -2,9 +2,16 @@ body{
     padding: 0;
     margin: 0;
     background-color: rgb(0, 0, 0);
+    background-image: url(../img/Diseño\ sin\ título\ \(2\).png) ;
+   background-size: cover;
+    background-repeat: no-repeat;
+
+   
 }
 header{
     display: flex;
+
+    
     
 }
 
@@ -48,7 +55,375 @@ header .tu{
     margin-left: 20rem;
     margin-top: 8rem;
 }
-
-.ses{
-    text-align: left;
+.p{
+  color: white;
+  padding-top: 20rem;
 }
+.ses{
+  margin-top: -20rem;
+  font-size: 40px;
+}
+
+.button {
+    position: absolute;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #E03205;
+    transition: all 0.2s ease;
+    margin-top: 26rem ;
+    margin-left: 20rem;
+  }
+  
+  .button:active {
+    transform: scale(0.96);
+  }
+  
+  .button:before,
+  .button:after {
+    position: absolute;
+    content: "";
+    width: 150%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: -1000;
+    background-repeat: no-repeat;
+  }
+  
+  .button:hover:before {
+    top: -70%;
+    background-image: radial-gradient(circle, #E03205 20%, transparent 20%),
+      radial-gradient(circle, transparent 20%, #E03205 20%, transparent 30%),
+      radial-gradient(circle, #E03205 20%, transparent 20%),
+      radial-gradient(circle, #E03205 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #E03205 15%, transparent 20%),
+      radial-gradient(circle, #E03205 20%, transparent 20%),
+      radial-gradient(circle, #E03205 20%, transparent 20%),
+      radial-gradient(circle, #E03205 20%, transparent 20%),
+      radial-gradient(circle, #E03205 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+      10% 10%, 18% 18%;
+    background-position: 50% 120%;
+    animation: greentopBubbles 0.6s ease;
+  }
+  
+  @keyframes greentopBubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+        40% 90%, 55% 90%, 70% 90%;
+    }
+  
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+        50% 50%, 65% 20%, 90% 30%;
+    }
+  
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+        50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  
+  .button:hover::after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, #E03205 20%, transparent 20%),
+      radial-gradient(circle, #E03205 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #E03205 15%, transparent 20%),
+      radial-gradient(circle, #E03205 20%, transparent 20%),
+      radial-gradient(circle, #E03205 20%, transparent 20%),
+      radial-gradient(circle, #E03205 20%, transparent 20%),
+      radial-gradient(circle, #E03205 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    background-position: 50% 0%;
+    animation: greenbottomBubbles 0.6s ease;
+  }
+  
+  @keyframes greenbottomBubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+        70% -10%, 70% 0%;
+    }
+  
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+        105% 0%;
+    }
+  
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+        110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+
+  
+  @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+  }
+  /*Cards*/
+  .container-card{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    margin-left: 6REM;
+    margin-top:10REM;
+  }
+  .title-cards{
+    width: 100%;
+    max-width: 1080px;
+    margin-left: 11REM;
+    padding: 20px;
+    margin-top: 10REM;
+    text-align: center;
+    color: #7a7a7a;
+  }
+  .card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background:#000000;
+    box-shadow: 0px 1px 10px #fff;
+    transition: all 400ms ease-out;
+    cursor: default;
+  }
+  .card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+  }
+  .card img{
+    width: 100%;
+    height: 210px;
+  }
+  .carcardd .contenido-{
+    padding: 15px;
+    text-align: center;
+
+  }
+
+
+  
+  .card .contenido-card h3{
+    margin-bottom: 15px;
+    color: #7a7a7a;
+  }
+
+
+
+  .card .contenido-card p{
+    line-height: 1.8;
+    color: #6a6a6a;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+
+  
+  .card .contenido-card a{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ff4d00;
+    border: 18px solid #000000;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    margin-bottom: 5px;
+  }
+  .card .contenido-card a:hover{
+    background: #000000;
+    color: #ff4d00;
+  }
+  @media only screen and (min-width:320px) and (max-width:768px){
+    .container-card{
+      flex-wrap: wrap;
+    }
+    .card{
+      margin: 15px;
+    }
+  }
+  /*Fin-Cards*/
+
+
+  footer{
+    margin-top: 6rem;
+    background: #151515;
+    padding: 80px 0px;
+    background-image: url(../img/www.Herculesgym.com.gif);
+    background-size: 50%;
+    
+}
+
+footer .foo-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .foo-row .foo-col{
+    width: 50%;
+}
+
+footer .foo-row .foo-col:last-child{
+    margin-left: 50px;
+}
+
+footer .foo-row .foo-col:first-child{
+    margin-right: 50px;
+}
+
+footer .foo-row .foo-col h2{
+    color: #E3E3E3;
+    line-height: 40px;
+
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+footer form .f-input{
+    width: 100%;
+    position: relative;
+}
+
+footer form .f-input input{
+    width: 100%;
+    display: block;
+    padding: 16px 30px;
+    background: #2C2B2B;
+    border: none;
+    padding-right: 50px;
+    font-size: 15px;
+    border-radius: 25px;
+    outline: 0;
+    color: #A7A1A1;
+}
+
+footer form .f-input .hm-btn-round{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    border: none;
+    font-size: 18px;margin-right: 3px;
+    cursor: pointer;
+}
+
+
+footer .foo-row .foo-col ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .foo-row .foo-col ul li{
+    width: 50%;
+    margin-bottom: 16px;
+}
+
+footer .foo-row .foo-col ul li a{
+    color: #E3E3E3;
+    font-size: 15px;
+}
+
+footer .foo-row .foo-col ul li a:hover{
+    color: var(--color-principal);
+    text-decoration: underline;
+}
+
+
+.foo-copy{
+    background: #000000;
+    padding: 40px 0px;
+    
+}
+
+.foo-copy img{
+height: 80px;
+width: 80px;
+align-items: center;
+}
+
+.foo-copy p{
+    text-align: center;
+    color: #E3E3E3;
+    font-size: 14px;
+    font-weight: 300;
+    
+}
+
+
+
+/*=================================
+    ESTILOS: RESPOIVE
+==================================*/
+@media screen and (max-width: 1024px){
+    .grid-product{
+        grid-template-columns: repeat(3,calc(33.33% - 2rem*2/3));
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+}
+
+.hm-header .icon-menu{
+    display: none;
+}
+
+@media screen and (max-width: 800px){
+    .hm-banner{
+        height: 400px;
+        min-height: 400px;
+    }
+
+    .hm-grid-category,
+    .grid-product{
+        grid-template-columns: repeat(2,calc(50% - 2rem*1/2));
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+
+    .hm-header .hm-menu ul{
+        display: none;
+    }
+
+    .hm-header .icon-menu{
+        display: block;
+        margin-left: 20px;
+
+    }
+
+    .hm-header .icon-menu button{
+        background: transparent;
+        border: none;
+        font-size: 22px;
+        color: var(--color-negro);
+    }
+
+    footer .foo-row{
+        flex-direction: column;
+    }
+
+    footer .foo-row .foo-col{
+        width: 100%;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    footer .foo-row .foo-col ul{
+        display: none;
+    }
+
+    .hm-tabs .hm-tab-link{
+        margin: 0px 10px;
+        margin-bottom: 10px;
+    }
